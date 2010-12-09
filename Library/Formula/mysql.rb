@@ -32,6 +32,7 @@ class Mysql <Formula
     ENV.universal_binary if ARGV.include? '--universal'
 
     configure_args = [
+      "--with-partition",
       "--without-docs",
       "--without-debug",
       "--disable-dependency-tracking",
